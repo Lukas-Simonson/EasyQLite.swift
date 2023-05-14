@@ -380,7 +380,7 @@ public final class TableBuilder {
     }
 
     // swiftlint:disable:next function_parameter_count
-    fileprivate func column(_ name: Expressible, _ datatype: String, _ primaryKey: PrimaryKey?, _ null: Bool,
+    public func column(_ name: Expressible, _ datatype: String, _ primaryKey: PrimaryKey?, _ null: Bool,
                             _ unique: Bool, _ check: Expressible?, _ defaultValue: Expressible?,
                             _ references: (QueryType, Expressible)?, _ collate: Collation?) {
         definitions.append(definition(name, datatype, primaryKey, null, unique, check, defaultValue, references, collate))
